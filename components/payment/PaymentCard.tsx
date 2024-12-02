@@ -17,18 +17,18 @@ export function PaymentCard({ onSuccess }: PaymentCardProps) {
 
   useEffect(() => {
     let card: any;
-    const initCard = async () => {
-      const { Card3D } = await import('react-3d-card-payment');
-      if (cardRef.current) {
-        card = new Card3D({
-          element: cardRef.current,
-          width: 350,
-          height: 200,
-        });
-      }
-    };
+    // const initCard = async () => {
+    //   const { Card3D } = await import('react-3d-card-payment');
+    //   if (cardRef.current) {
+    //     card = new Card3D({
+    //       element: cardRef.current,
+    //       width: 350,
+    //       height: 200,
+    //     });
+    //   }
+    // };
 
-    initCard();
+    // initCard();
 
     return () => {
       if (card) {
